@@ -1,53 +1,70 @@
-# Runtime Code 
+# Runtime Code Experiment
 
-## Spec-Driven Development Process:
+## Overview
 
-This repository follows a **spec-driven development** approach, where specifications are the central, version-controlled artifacts that drive the entire development process.
+This repository contains experiments for building a text-to-code execution system that will eventually evolve into an AI-driven game control mechanism. The goal is to explore how natural language instructions can be converted to executable code that controls game entities and environments.
 
-### 🎯 Philosophy
+**Current Status**: Working on a code execution proof-of-concept (POC)
 
-Spec-driven development ensures that:
-- Requirements are clearly defined before implementation begins
-- Design decisions are documented and traceable
-- Implementation tasks are broken down systematically
-- Code is validated against well-defined specifications
-- Knowledge is preserved and shared across the team
+## Long-term Vision
+
+1. **Text Instructions** → **LLM Code Generation** → **Game Control**
+2. Target: 2D top-down game controlled through natural language
+3. Example: "Move character north 3 steps" → Generated code → Character movement
+
+## Current Features
+
+### 01 - Code Execution POC (`specs/01-code-execution-poc/`)
+A WebSocket-based proof of concept for:
+- Web UI for typing JavaScript code
+- Node.js server that executes code using `eval()`
+- Real-time console output streaming back to UI
+- Foundation for future game state manipulation
+
+## Spec-Driven Development Process
+
+This repository follows a **spec-driven development** approach documented in `docs/feature_development_process.md`. Each feature follows this gated process:
+
+1. **Requirements** (`requirements.md`) → Review & Approve → Git Commit
+2. **Design** (`design.md`) → Review & Approve → Git Commit  
+3. **Tasks** (`tasks.md`) → Review & Approve → Git Commit
+4. **Implementation** → Validation against specs
 
 ### 📁 Repository Structure
 
 ```
 .
-├── specs/                          # Core specifications directory
-│   ├── <feature-or-module-name>/   # Feature-specific specifications
-│   │   ├── requirements.md         # User stories & acceptance criteria
-│   │   ├── design.md              # Technical architecture & design
-│   │   └── tasks.md               # Implementation task breakdown
-│   └── common/                    # Shared specifications
-│       └── shared_definitions.md  # Common definitions & standards
-├── src/                           # Application source code
-├── tests/                         # All types of tests
-├── docs/                          # Generated/derived documentation
-│   ├── api_documentation.md       # API documentation
-│   └── user_manual.md            # End-user documentation
-├── .gitignore                     # Git ignore patterns
-├── README.md                      # This file
-└── package.json                   # Project dependencies & scripts
+├── specs/                          # Feature specifications (numbered chronologically)
+│   ├── 00-example-feature/         # Example feature structure
+│   ├── 01-code-execution-poc/      # Current: Code execution proof-of-concept
+│   └── common/                     # Shared specifications & standards
+├── src/                            # Application source code (future)
+├── tests/                          # All types of tests (future)
+├── docs/                           # Process documentation
+│   ├── feature_development_process.md  # Development workflow
+│   └── api_documentation.md        # API docs (future)
+└── README.md                       # This file
 ```
 
-### 🚀 Getting Started
+## Getting Started
 
-#### 1. Creating a New Feature
+### Running Current Features
+*Implementation coming after design phase*
 
-When starting a new feature or module:
+### Creating New Features
+Follow the process documented in `docs/feature_development_process.md`:
 
-1. **Create a new directory** under `specs/` with a descriptive name:
-   ```bash
-   mkdir specs/your-feature-name
-   ```
+1. Create numbered feature directory: `specs/NN-feature-name/`
+2. Document requirements → Get approval → Commit
+3. Document design → Get approval → Commit
+4. Plan tasks → Get approval → Commit
+5. Implement
 
-2. **Create the three core specification files**:
-   ```bash
-   touch specs/your-feature-name/requirements.md
+## Development Notes
+
+- **POC Focus**: Current implementations prioritize simplicity and learning over production quality
+- **Local Only**: All experiments run locally, no deployment considerations
+- **Throwaway Code**: POC implementations will be discarded as we iterate toward the final vision
    touch specs/your-feature-name/design.md
    touch specs/your-feature-name/tasks.md
    ```
