@@ -4,7 +4,7 @@
 
 This repository contains experiments for building a text-to-code execution system that will eventually evolve into an AI-driven game control mechanism. The goal is to explore how natural language instructions can be converted to executable code that controls game entities and environments.
 
-**Current Status**: Working on a code execution proof-of-concept (POC)
+**Current Status**: Ready to implement code execution POC (requirements ✅, design ✅, tasks ✅)
 
 ## Long-term Vision
 
@@ -65,6 +65,8 @@ Follow the process documented in `docs/feature_development_process.md`:
 - **POC Focus**: Current implementations prioritize simplicity and learning over production quality
 - **Local Only**: All experiments run locally, no deployment considerations
 - **Throwaway Code**: POC implementations will be discarded as we iterate toward the final vision
+- **Test-Driven Development**: Unit tests for core logic, manual testing for end-to-end validation
+- **Incremental Implementation**: Tasks completed one-by-one with checkmark-level review cycles
    touch specs/your-feature-name/design.md
    touch specs/your-feature-name/tasks.md
    ```
