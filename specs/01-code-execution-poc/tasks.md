@@ -10,11 +10,11 @@ Break down the design into specific, actionable tasks for building the WebSocket
 **Goal**: Set up basic project structure, dependencies, and testing framework
 - [x] Create `src/` directory
 - [x] Initialize `package.json` with basic project info
-- [ ] Install `ws` dependency for WebSocket support
-- [ ] Install testing dependencies (`jest` or similar lightweight framework)
-- [ ] Create basic `.gitignore` for Node.js
-- [ ] Set up test script in `package.json`
-- [ ] Create `tests/` directory structure
+- [x] Install `ws` dependency for WebSocket support
+- [x] Install testing dependencies (`jest` or similar lightweight framework)
+- [x] Create basic `.gitignore` for Node.js
+- [x] Set up test script in `package.json`
+- [x] Create `tests/` directory structure
 
 **Acceptance Criteria**: 
 - Project can run `npm install` successfully

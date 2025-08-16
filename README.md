@@ -4,7 +4,7 @@
 
 This repository contains experiments for building a text-to-code execution system that will eventually evolve into an AI-driven game control mechanism. The goal is to explore how natural language instructions can be converted to executable code that controls game entities and environments.
 
-**Current Status**: Ready to implement code execution POC (requirements ✅, design ✅, tasks ✅)
+**Current Status**: Implementing code execution POC (Task 1 ✅ complete, starting Task 2)
 
 ## Long-term Vision
 
@@ -49,7 +49,12 @@ This repository follows a **spec-driven development** approach documented in `do
 ## Getting Started
 
 ### Running Current Features
-*Implementation coming after design phase*
+**Prerequisites**: Node.js and npm (installed via Homebrew)
+
+**Project Setup** (Task 1 Complete):
+- `npm install` - Install dependencies (ws, jest)
+- `npm test` - Run test suite (currently empty, exits successfully)
+- `npm start` - Start server (implementation in progress)
 
 ### Creating New Features
 Follow the process documented in `docs/feature_development_process.md`:

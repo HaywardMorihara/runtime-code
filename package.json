@@ -4,11 +4,16 @@
   "description": "Proof of concept for WebSocket-based code execution system",
   "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --passWithNoTests",
+    "start": "node src/server.js"
   },
   "keywords": ["websocket", "code-execution", "poc"],
   "author": "HaywardMorihara",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "ws": "^8.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
 }

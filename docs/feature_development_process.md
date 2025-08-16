@@ -36,10 +36,11 @@ This document outlines the standard process for developing new features in this 
 
 #### Implementation Workflow (Per Task)
 1. **Task Start**: Request approval to begin specific task
-2. **Checkmark Completion Cycle** (repeat for each checkmark):
+2. **Tool Check**: Verify required tools are available, request installation if missing
+3. **Checkmark Completion Cycle** (repeat for each checkmark):
    - Complete the checkmark requirement
    - Update `tasks.md` to mark checkmark as completed (✅)
-3. **Task Completion**:
+4. **Task Completion**:
    - **Verify functionality**: Confirm the overall task works as intended
      - Preferred: Unit tests that validate the behavior
      - Alternative: Create and run verification scripts
@@ -52,6 +53,7 @@ This document outlines the standard process for developing new features in this 
 ## Key Principles
 - **Gated Process**: Each step requires explicit user approval before proceeding
 - **Documentation First**: Always document before implementing
+- **Tool Availability**: Check for required tools and request installation when missing
 - **Incremental Implementation**: Complete tasks one-by-one with checkmark-level review cycles
 - **Verification Required**: Each implementation step must be verified through tests or scripts
 - **Test-Driven Development**: Write unit tests first where feasible (not dogmatic - focus on easy wins)
