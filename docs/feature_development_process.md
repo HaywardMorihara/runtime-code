@@ -38,6 +38,10 @@ This document outlines the standard process for developing new features in this 
 1. **Task Start**: Request approval to begin specific task
 2. **Checkmark Completion Cycle** (repeat for each checkmark):
    - Complete the checkmark requirement
+   - **Verify functionality**: Confirm the implementation works as intended
+     - Preferred: Unit tests that validate the behavior
+     - Alternative: Create and run verification scripts
+     - Exception: Request approval to skip verification if not feasible/worthwhile
    - Update `tasks.md` to mark checkmark as completed (✅)
    - Request code review before proceeding to next checkmark
 3. **Task Completion**:
@@ -49,6 +53,7 @@ This document outlines the standard process for developing new features in this 
 - **Gated Process**: Each step requires explicit user approval before proceeding
 - **Documentation First**: Always document before implementing
 - **Incremental Implementation**: Complete tasks one-by-one with checkmark-level review cycles
+- **Verification Required**: Each implementation step must be verified through tests or scripts
 - **Test-Driven Development**: Write unit tests first where feasible (not dogmatic - focus on easy wins)
 - **Self-Documenting Tests**: Tests should enforce acceptance criteria and prevent regressions
 - **Speed over Perfection for POCs**: For proof-of-concepts, prioritize development speed over comprehensive testing
