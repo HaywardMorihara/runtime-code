@@ -8,8 +8,8 @@ Break down the design into specific, actionable tasks for building the WebSocket
 
 ### Task 1: Project Setup & Test Infrastructure
 **Goal**: Set up basic project structure, dependencies, and testing framework
-- [ ] Create `src/` directory
-- [ ] Initialize `package.json` with basic project info
+- [x] Create `src/` directory
+- [x] Initialize `package.json` with basic project info
 - [ ] Install `ws` dependency for WebSocket support
 - [ ] Install testing dependencies (`jest` or similar lightweight framework)
 - [ ] Create basic `.gitignore` for Node.js

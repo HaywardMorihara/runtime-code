@@ -38,13 +38,13 @@ This document outlines the standard process for developing new features in this 
 1. **Task Start**: Request approval to begin specific task
 2. **Checkmark Completion Cycle** (repeat for each checkmark):
    - Complete the checkmark requirement
-   - **Verify functionality**: Confirm the implementation works as intended
+   - Update `tasks.md` to mark checkmark as completed (✅)
+3. **Task Completion**:
+   - **Verify functionality**: Confirm the overall task works as intended
      - Preferred: Unit tests that validate the behavior
      - Alternative: Create and run verification scripts
      - Exception: Request approval to skip verification if not feasible/worthwhile
-   - Update `tasks.md` to mark checkmark as completed (✅)
-   - Request code review before proceeding to next checkmark
-3. **Task Completion**:
+   - **Code review**: Request review of all task changes before proceeding
    - Update relevant documentation (README.md, `common/`, etc.)
    - Git commit all changes for the completed task
    - Proceed to next task (with approval)
