@@ -25,12 +25,12 @@ Break down the design into specific, actionable tasks for building the WebSocket
 
 ### Task 2: WebSocket Server Implementation
 **Goal**: Build Node.js server that accepts WebSocket connections and executes code
-- [ ] Create `src/server.js`
-- [ ] Set up WebSocket server listening on port 8080
-- [ ] Handle client connections and disconnections
-- [ ] Implement message parsing for `{type: 'execute', code: string}`
-- [ ] Implement basic `eval()` execution of received code
-- [ ] Send success/error responses back to client
+- [x] Create `src/server.js`
+- [x] Set up WebSocket server listening on port 8080
+- [x] Handle client connections and disconnections
+- [x] Implement message parsing for `{type: 'execute', code: string}`
+- [x] Implement basic `eval()` execution of received code
+- [x] Send success/error responses back to client
 
 **Acceptance Criteria**:
 - Server starts without errors
